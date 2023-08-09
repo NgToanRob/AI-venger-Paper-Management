@@ -116,6 +116,17 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Add this line to enable authentication using email instead of the default username
+AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.AllowAllUsersModelBackend']\
+
+# The URL to redirect to after successful login
+LOGIN_REDIRECT_URL = '/'
+
+# The URL to redirect to when login is required
+LOGIN_URL = 'auth/login/'
+
+AUTH_USER_MODEL = 'User.CustomUser' 
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
