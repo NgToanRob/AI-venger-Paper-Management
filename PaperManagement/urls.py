@@ -21,4 +21,5 @@ from Authentication import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("Authentication.urls")),
+    path('search/', include('SearchEngine.urls')),
 ]
