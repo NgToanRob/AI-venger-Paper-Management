@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -23,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-sp#c!c$_%&%)7!s3i^-jbzl7q#@__&)pgv7g7#yc$+xxz7r3&h'
+SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -89,14 +90,13 @@ WSGI_APPLICATION = 'PaperManagement.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'paper_management',  # Database name you created earlier in RDS
-        'USER': 'postgres',  # Master username you mentioned earlier
-        'PASSWORD': '0qMD2uooA9IMVjrKA5GC',  # Master password you mentioned earlier
-        'HOST': 'database-ai-venger.c89724afr2ai.ap-southeast-2.rds.amazonaws.com',
-        'PORT': '5432',  # Default PostgreSQL port
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST'),
+        'PORT': os.environ.get('DB_PORT'),
     }
 }
-
 
 
 # Password validation
