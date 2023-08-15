@@ -10,7 +10,12 @@ def search_arxiv(request):
         SearchHistory.objects.create(query=query_string)
     if query_string:
         # Search arXiv and get the results
-        search_results = Search(query=query_string, max_results=10, sort_by=SortCriterion.Relevance, sort_order=SortOrder.Descending)
+        search_results = Search(
+            query=query_string,
+            max_results=10, 
+            sort_by=SortCriterion.Relevance, 
+            sort_order=SortOrder.Descending
+        )
 
         # Extract relevant data and build a list of dictionaries
         for result in search_results.results():
