@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.staticfiles',
     'Paper',
     'User',
     'SearchEngine'
@@ -78,23 +79,24 @@ WSGI_APPLICATION = 'PaperManagement.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'paper_management',  # Database name you created earlier in RDS
+        'USER': 'postgres',  # Master username you mentioned earlier
+        'PASSWORD': '0qMD2uooA9IMVjrKA5GC',  # Master password you mentioned earlier
+        'HOST': 'database-ai-venger.c89724afr2ai.ap-southeast-2.rds.amazonaws.com',
+        'PORT': '5432',  # Default PostgreSQL port
     }
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': os.getenv('DATABASE_NAME'),
-#         'USER': os.getenv('DATABASE_USERNAME'),
-#         'PASSWORD': os.getenv('DATABASE_PASSWORD'),
-#         'HOST': os.getenv('DATABASE_ENDPOINT'),
-#         'PORT': os.getenv('DATABASE_PORT'),
-#     }
-# }
 
 
 # Password validation
