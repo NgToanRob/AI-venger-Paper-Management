@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "Paper",
     "User",
-    "Authentication",
 ]
 
 MIDDLEWARE = [
