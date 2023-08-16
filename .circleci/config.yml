@@ -23,9 +23,44 @@ jobs:
         name: Check import sorting with isort
         command: isort . --check-only
 
+  build_and_push_ecr:
+    machine:
+      image: ubuntu-2204:2022.04.1
+    steps:
+      - checkout
+      - run:
+        name: Install Docker
+        command: sudo apt-get install -y docker.io
+
+      - setup_remote_docker:
+        version: 20.10.8
+
+      - run:
+        name: Build Docker Image
+        command: |
+          docker build -t project_management .
+          docker tag peroject_management:latest $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/AI-venger-Paper-Management:latest
+
+      - run:
+        name: Configure AWS CLI
+        command: |
+          aws configure set aws_access_key_id $AWS_ACCESS_KEY
+          aws configure set aws_secret_access_key $AWS_SECRET_KEY
+          aws configure set default.region $AWS_REGION
+          aws sts get-caller-identity
+
+      - run:
+        name: Authenicate ECR
+        command: $(aws ecr get-login --no-include-email --region $AWS_REGION)
+
+      - run:
+        name: Push Docker Image to ECR
+        command: docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/AI-venger-Paper-Management:latest
+
 workflows:
   version: 2
   build-workflow:
     jobs:
       - build
       - check-formatting
+      - build_and_push_ecr
