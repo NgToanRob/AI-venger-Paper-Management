@@ -16,6 +16,9 @@ media
 # <django-project-name>/staticfiles/
 
 ### Django.Python Stack ###
+# Light database
+*.sqlite3
+
 # Byte-compiled / optimized / DLL files
 *.py[cod]
 *$py.class
@@ -170,5 +173,4 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
-
 # End of https://www.toptal.com/developers/gitignore/api/django

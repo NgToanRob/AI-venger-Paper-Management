@@ -16,10 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from Authentication import views
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("", include("Authentication.urls")),
-    path('search/', include('SearchEngine.urls')),
+    path('admin/', admin.site.urls),
+    path('', include('User.urls')),
+    path('home/', include('SearchEngine.urls')),
 ]
