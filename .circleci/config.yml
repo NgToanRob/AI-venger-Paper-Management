@@ -11,6 +11,18 @@ jobs:
           name: Install Dependencies
           command: pip install -r requirements.txt
 
+  check-formatting:
+    executor: django-executor
+    steps:
+      - checkout
+      - run:
+        name: Check code formatting
+        command: black --check
+
+      - run:
+        name: Check import sorting with isort
+        command: isort . --check-only
+
 workflows:
   version: 2
   build-workflow:
