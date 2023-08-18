@@ -26,7 +26,7 @@ jobs:
       - run:
           name: Check code formatting
           command: |
-            black --check
+            black . --check
             isort . --check-only
 
   # build_and_push_ecr:
