@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('SearchEngine', '0002_arxivresult_url'),
+        ("SearchEngine", "0002_arxivresult_url"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='arxivresult',
-            name='related',
-            field=models.TextField(default=''),
+            model_name="arxivresult",
+            name="related",
+            field=models.TextField(default=""),
         ),
     ]

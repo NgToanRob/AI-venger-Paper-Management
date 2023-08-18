@@ -7,28 +7,43 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='ArxivResult',
+            name="ArxivResult",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=255)),
-                ('authors', models.TextField()),
-                ('abstract', models.TextField()),
-                ('arxiv_id', models.CharField(max_length=20, unique=True)),
-                ('published_date', models.DateTimeField()),
-                ('related', models.TextField()),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("title", models.CharField(max_length=255)),
+                ("authors", models.TextField()),
+                ("abstract", models.TextField()),
+                ("arxiv_id", models.CharField(max_length=20, unique=True)),
+                ("published_date", models.DateTimeField()),
+                ("related", models.TextField()),
             ],
         ),
         migrations.CreateModel(
-            name='SearchHistory',
+            name="SearchHistory",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('query', models.CharField(max_length=255)),
-                ('timestamp', models.DateTimeField(auto_now_add=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("query", models.CharField(max_length=255)),
+                ("timestamp", models.DateTimeField(auto_now_add=True)),
             ],
         ),
     ]
