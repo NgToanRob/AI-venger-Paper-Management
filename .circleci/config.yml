@@ -22,6 +22,7 @@ jobs:
           command: |
             pip install black
             pip install isort
+            pip install flake8
 
       - run:
           name: Check code formatting
