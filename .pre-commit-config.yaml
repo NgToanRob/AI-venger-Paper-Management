@@ -1,6 +1,6 @@
-- repo: https://github.com/NgToanRob/AI-venger-Paper-Management/tree/feature/circle-ci
-
-  hooks:
-    - id: black
-    - id: isort
-    - id: flake8
+repos:
+  - repo: https://github.com/NgToanRob/AI-venger-Paper-Management
+    hooks:
+      - id: black
+      - id: isort
+      - id: flake8
