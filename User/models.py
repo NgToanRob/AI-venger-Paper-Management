@@ -51,6 +51,8 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
         related_name='customuser_set'  # Change to a unique related_name
     )
 
+    domains = models.CharField(max_length=255, blank=True, null=True)
+
     def __str__(self):
         return self.name
 

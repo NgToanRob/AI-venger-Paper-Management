@@ -1,5 +1,5 @@
 
-
+from django.views.decorators.http import require_POST
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
 from django.contrib.auth import get_user_model
@@ -74,3 +74,15 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return redirect("login")
+
+
+@login_required
+@require_POST
+def update_domains(request):
+    user = request.user
+    domains = request.POST.get('domains', '')
+    
+    user.domains = domains
+    user.save()
+
+    return JsonResponse({'message': 'Domains updated successfully'})
