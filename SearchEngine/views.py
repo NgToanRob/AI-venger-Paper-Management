@@ -32,23 +32,26 @@ def search_arxiv(request):
 from django.db.models import Count
 from datetime import datetime
 
+from django.http import JsonResponse
+from django.contrib.auth.decorators import login_required
+from django.views.decorators.csrf import csrf_exempt
+from django.db.models import F
+
+@csrf_exempt 
+@login_required()
 def recommended_papers(request):
-    # Get the top 5 most searched queries
-    top_queries = SearchHistory.objects.values('query').annotate(query_count=Count('query')).order_by('-query_count')[:7]
-
+    user = request.user
+    interested_domains = user.domains.all()  # Assuming "domains" is the related name in the User model
+    
     recommended_results = []
-    processed_topics = set()
     papers = set()
-    for entry in top_queries:
-        query = entry['query']
-        if query in processed_topics:
-            continue
-
-        # Search arXiv based on the query and get relevant information
-        search_results = Search(query=query, max_results=1, sort_by=SortCriterion.LastUpdatedDate, sort_order=SortOrder.Descending)
+    
+    for domain in interested_domains:
+        # Search arXiv based on the user's interested domain and get relevant information
+        search_results = Search(query=domain.name, max_results=1, sort_by=SortCriterion.LastUpdatedDate, sort_order=SortOrder.Descending)
         search_results_list = list(search_results.results())
-        if search_results_list:
-            paper = search_results_list[0]
+        
+        for paper in search_results_list:
             if paper.title not in papers:
                 author_names = [author.name for author in paper.authors]
                 recommended_results.append({
@@ -57,8 +60,9 @@ def recommended_papers(request):
                     'abstract': paper.summary,
                     'published_date': paper.published,
                     'url': paper.pdf_url,
-                    'related': query
+                    'related': domain.name
                 })
-            papers.add(paper.title)
-        processed_topics.add(query)
+                papers.add(paper.title)
+    
     return JsonResponse(recommended_results, safe=False)
+
