@@ -43,6 +43,7 @@ def register_view(request):
 
 
 @csrf_exempt
+@login_required
 def login_view(request):
     if request.method == 'POST':
         # Get the email and password from the request data

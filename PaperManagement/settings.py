@@ -148,7 +148,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Add your frontend's origin here
 ]
 
-LOGIN_URL = 'auth/login'
+LOGIN_URL = '/auth/login'
 LOGIN_REDIRECT_URL = '/home'
 
 AUTHENTICATION_BACKENDS = [
