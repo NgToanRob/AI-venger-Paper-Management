@@ -1,4 +1,3 @@
-from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
 from django.db import IntegrityError
 from django.http import JsonResponse
@@ -7,14 +6,15 @@ from django.views.decorators.csrf import csrf_exempt
 
 @login_required(login_url="login")
 def home(request):
-    return render(request, "Authentication/home.html")
+    # return render(request, "Authentication/home.html")
+    pass
 
 
 @csrf_exempt
 def register_view(request):
     if request.method == "POST":
-        name = request.POST.get("name")
-        email = request.POST.get("email")
+        # name = request.POST.get("name")
+        # email = request.POST.get("email")
         password = request.POST.get("password")
         confirm_password = request.POST.get("confirm_password")
         accept_terms = request.POST.get("accept_terms") == "true"
@@ -28,9 +28,9 @@ def register_view(request):
             return JsonResponse({"error": "You must accept the terms"}, status=400)
 
         # Create a new user
-        User = get_user_model()
+        # User = get_user_model()
         try:
-            user = User.objects.create_user(email=email, name=name, password=password)
+            # user = User.objects.create_user(email=email, name=name, password=password)
             return JsonResponse({"message": "Registration successful"})
         except IntegrityError:
             return JsonResponse(
@@ -47,7 +47,7 @@ def login_view(request):
         # Get the email and password from the request data
         email = request.POST.get("email")
         password = request.POST.get("password")
-        remember_me = request.POST.get("remember_me") == "true"  # Convert to boolean
+        # remember_me = request.POST.get("remember_me") == "true"  # Convert to boolean
 
         # Implement your login logic here
         # For example, you can use Django's built-in authentication system:
@@ -70,5 +70,6 @@ def login_view(request):
 
 
 def logout_view(request):
-    logout(request)
-    return redirect("login")
+    # logout(request)
+    # return redirect("login")
+    pass

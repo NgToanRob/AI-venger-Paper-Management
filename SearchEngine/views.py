@@ -1,6 +1,6 @@
 from arxiv import Search, SortCriterion, SortOrder
+from django.db.models import Count
 from django.http import JsonResponse
-from django.shortcuts import render
 
 from .models import SearchHistory
 
@@ -35,11 +35,6 @@ def search_arxiv(request):
             results.append(result_dict)
 
     return JsonResponse(results, safe=False)
-
-
-from datetime import datetime
-
-from django.db.models import Count
 
 
 def recommended_papers(request):

@@ -1,6 +1,16 @@
 repos:
-  - repo: https://github.com/NgToanRob/AI-venger-Paper-Management
+  - repo: https://github.com/PyCQA/flake8
+    rev: a2b02b8
+    hooks:
+      - id: flake8
+        args: ["--max-line-length=150"] # Set the maximum line length
+
+  - repo: https://github.com/psf/black
+    rev: 6310a40
     hooks:
       - id: black
+
+  - repo: https://github.com/PyCQA/isort
+    rev: fd5e3d6
+    hooks:
       - id: isort
-      - id: flake8
