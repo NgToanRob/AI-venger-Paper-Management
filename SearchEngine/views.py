@@ -51,7 +51,6 @@ def recommended_papers(request):
         return JsonResponse({'message': 'Unauthorized'}, status=401)
 
     interested_topics = user.topics.all()  # Assuming "topics" is a related name in the User model
-    print(interested_topics)
 
     recommended_results = []
     papers = set()
