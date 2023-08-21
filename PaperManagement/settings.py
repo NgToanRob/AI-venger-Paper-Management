@@ -162,3 +162,5 @@ SESSION_COOKIE_HTTPONLY = True  # Recommended for security reasons
 SESSION_COOKIE_NAME = 'sessionid'  # Set your desired cookie name
 CSRF_COOKIE_SECURE = True  # Ensure CSRF cookie is secure
 CSRF_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_PATH = '/'
+CSRF_COOKIE_PATH = '/'
