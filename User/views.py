@@ -5,6 +5,13 @@ from django.http import JsonResponse
 from django.contrib.auth import get_user_model
 from django.db import IntegrityError
 from django.contrib.auth.decorators import login_required
+from django.views.decorators.http import require_POST
+import json
+from django.contrib.auth import authenticate, login, logout
+from .models import Topic, CustomUser
+from django.http import JsonResponse
+from django.contrib.auth import authenticate, login
+from django.middleware.csrf import get_token
 
 
 @login_required(login_url="login")
@@ -15,75 +22,77 @@ def home(request):
 @csrf_exempt
 def register_view(request):
     if request.method == 'POST':
-        name = request.POST.get('name')
-        email = request.POST.get('email')
-        password = request.POST.get('password')
-        confirm_password = request.POST.get('confirm_password')
-        accept_terms = request.POST.get('accept_terms') == 'true'
+        data = json.loads(request.body.decode('utf-8'))  # Get data from request body
+        name = data.get('name')
+        email = data.get('email')
+        password = data.get('password')
 
-        # Check if passwords match
-        if password != confirm_password:
-            return JsonResponse({'error': 'Passwords do not match'}, status=400)
-
-        # Check if user accepted terms
-        if not accept_terms:
-            return JsonResponse({'error': 'You must accept the terms'}, status=400)
+        # Check if a user with the given email already exists
+        if CustomUser.objects.filter(email=email).exists():
+            return JsonResponse({'message': 'User with this email already exists.'}, status=400)
 
         # Create a new user
-        User = get_user_model()
-        try:
-            user = User.objects.create_user(
-                email=email, name=name, password=password)
-            return JsonResponse({'message': 'Registration successful'})
-        except IntegrityError:
-            return JsonResponse({'error': 'User with this email already exists'}, status=400)
+        user = CustomUser.objects.create_user(name=name, email=email, password=password)
 
-    # Return error for unsupported request methods (GET, etc.)
-    return JsonResponse({'error': 'Invalid request method'}, status=405)
+        if user:
+            return JsonResponse({'message': 'User registered successfully.'})
+        else:
+            return JsonResponse({'message': 'Error occurred during registration.'}, status=500)
+
+    return JsonResponse({'message': 'Invalid request method.'}, status=405)
 
 
 @csrf_exempt
-@login_required
 def login_view(request):
     if request.method == 'POST':
-        # Get the email and password from the request data
-        email = request.POST.get('email')
-        password = request.POST.get('password')
-        remember_me = request.POST.get(
-            'remember_me') == 'true'  # Convert to boolean
-
-        # Implement your login logic here
-        # For example, you can use Django's built-in authentication system:
-        from django.contrib.auth import authenticate, login
+        data = json.loads(request.body.decode('utf-8')) # Get data from request body
+        email = data.get('email')
+        password = data.get('password')
+        remember_me = data.get('remember_me') == 'true'
+        print(email, password, remember_me)
 
         user = authenticate(request, username=email, password=password)
 
         if user is not None:
-            # Successful login
-            login(request, user)
-
-            # Return success response
-            return JsonResponse({'message': 'Login successful'})
+            if user.is_active:
+                login(request, user)
+                if not remember_me:
+                    request.session.set_expiry(0)  # Session expires when the browser is closed
+                
+                return JsonResponse({'message': 'Login successful.'})
+            else:
+                return JsonResponse({'message': 'Your account is not active.'}, status=403)
         else:
-            # Failed login
-            return JsonResponse({'error': 'Invalid credentials'}, status=401)
+            return JsonResponse({'message': 'Invalid email or password.'}, status=401)
 
-    # Return error for unsupported request methods (GET, etc.)
-    return JsonResponse({'error': 'Invalid request method'}, status=405)
+    return JsonResponse({'message': 'Invalid request method.'}, status=405)
 
 
 def logout_view(request):
     logout(request)
     return redirect("login")
 
-
-@login_required
+@csrf_exempt
 @require_POST
-def update_domains(request):
+def update_topics(request):
     user = request.user
-    domains = request.POST.get('domains', '')
-    
-    user.domains = domains
-    user.save()
+    print(user)
 
-    return JsonResponse({'message': 'Domains updated successfully'})
+    if user.is_authenticated:
+        # User is logged in
+        data = request.POST.getlist('topics')  # Assuming 'topics' is the name attribute in your form
+
+        updated_topics = []
+
+        for topic_name in data:
+            topic, created = Topic.objects.get_or_create(name=topic_name)
+            user.topics.add(topic)
+            updated_topics.append(topic.name)
+
+        return JsonResponse({'message': 'Topics updated successfully', 'updated_topics': updated_topics}, status=200)
+    else:
+        # User is not logged in
+        return JsonResponse({'error': 'User not authenticated'}, status=401)
+
+
+    
