@@ -30,6 +30,7 @@ jobs:
           command: pre-commit run --all-files
 
   build_and_push_ecr:
+    machine: true
     steps:
       - checkout
 
