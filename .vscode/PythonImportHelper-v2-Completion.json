@@ -1,0 +1,1375 @@
+[
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAI",
+        "importPath": "langchain",
+        "description": "langchain",
+        "isExtraImport": true,
+        "detail": "langchain",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAI",
+        "importPath": "langchain",
+        "description": "langchain",
+        "isExtraImport": true,
+        "detail": "langchain",
+        "documentation": {}
+    },
+    {
+        "label": "load_summarize_chain",
+        "importPath": "langchain.chains.summarize",
+        "description": "langchain.chains.summarize",
+        "isExtraImport": true,
+        "detail": "langchain.chains.summarize",
+        "documentation": {}
+    },
+    {
+        "label": "RecursiveCharacterTextSplitter",
+        "importPath": "langchain.text_splitter",
+        "description": "langchain.text_splitter",
+        "isExtraImport": true,
+        "detail": "langchain.text_splitter",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAIEmbeddings",
+        "importPath": "langchain.embeddings",
+        "description": "langchain.embeddings",
+        "isExtraImport": true,
+        "detail": "langchain.embeddings",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAIEmbeddings",
+        "importPath": "langchain.embeddings",
+        "description": "langchain.embeddings",
+        "isExtraImport": true,
+        "detail": "langchain.embeddings",
+        "documentation": {}
+    },
+    {
+        "label": "FAISS",
+        "importPath": "langchain.vectorstores",
+        "description": "langchain.vectorstores",
+        "isExtraImport": true,
+        "detail": "langchain.vectorstores",
+        "documentation": {}
+    },
+    {
+        "label": "FAISS",
+        "importPath": "langchain.vectorstores",
+        "description": "langchain.vectorstores",
+        "isExtraImport": true,
+        "detail": "langchain.vectorstores",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "PyPDF2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "PyPDF2",
+        "description": "PyPDF2",
+        "detail": "PyPDF2",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "load_qa_chain",
+        "importPath": "langchain.chains.question_answering",
+        "description": "langchain.chains.question_answering",
+        "isExtraImport": true,
+        "detail": "langchain.chains.question_answering",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_exempt",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_exempt",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_exempt",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Count",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "F",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Count",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "require_POST",
+        "importPath": "django.views.decorators.http",
+        "description": "django.views.decorators.http",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.http",
+        "documentation": {}
+    },
+    {
+        "label": "require_POST",
+        "importPath": "django.views.decorators.http",
+        "description": "django.views.decorators.http",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.http",
+        "documentation": {}
+    },
+    {
+        "label": "require_POST",
+        "importPath": "django.views.decorators.http",
+        "description": "django.views.decorators.http",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.http",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "Search",
+        "importPath": "arxiv",
+        "description": "arxiv",
+        "isExtraImport": true,
+        "detail": "arxiv",
+        "documentation": {}
+    },
+    {
+        "label": "SortCriterion",
+        "importPath": "arxiv",
+        "description": "arxiv",
+        "isExtraImport": true,
+        "detail": "arxiv",
+        "documentation": {}
+    },
+    {
+        "label": "SortOrder",
+        "importPath": "arxiv",
+        "description": "arxiv",
+        "isExtraImport": true,
+        "detail": "arxiv",
+        "documentation": {}
+    },
+    {
+        "label": "django.utils.timezone",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
+        "label": "UserAdmin",
+        "importPath": "django.contrib.auth.admin",
+        "description": "django.contrib.auth.admin",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractBaseUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserManager",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "PermissionsMixin",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_token",
+        "importPath": "django.middleware.csrf",
+        "description": "django.middleware.csrf",
+        "isExtraImport": true,
+        "detail": "django.middleware.csrf",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "Paper.migrations.0001_initial",
+        "description": "Paper.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Authors',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100)),",
+        "detail": "Paper.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "Paper.migrations.0002_rename_authors_author_rename_papers_paper",
+        "description": "Paper.migrations.0002_rename_authors_author_rename_papers_paper",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('Paper', '0001_initial'),\n    ]\n    operations = [\n        migrations.RenameModel(\n            old_name='Authors',\n            new_name='Author',\n        ),\n        migrations.RenameModel(",
+        "detail": "Paper.migrations.0002_rename_authors_author_rename_papers_paper",
+        "documentation": {}
+    },
+    {
+        "label": "PaperConfig",
+        "kind": 6,
+        "importPath": "Paper.apps",
+        "description": "Paper.apps",
+        "peekOfCode": "class PaperConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'Paper'",
+        "detail": "Paper.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Author",
+        "kind": 6,
+        "importPath": "Paper.models",
+        "description": "Paper.models",
+        "peekOfCode": "class Author(models.Model):\n    name = models.CharField(max_length=100)  # Name of the author\n    def __str__(self):\n        return self.name\nclass Paper(models.Model):\n    # title = models.CharField(max_length=200)  # The title of the paper\n    # authors = models.ManyToManyField(Author)  # Many-to-many relationship with Authors model\n    # publication_date = models.DateField()  # The publication date of the paper\n    # abstract = models.TextField()  # Summary of the content of the paper\n    # domain = models.CharField(max_length=50)  # Research area of the paper (e.g., NLP, Computer Vision)",
+        "detail": "Paper.models",
+        "documentation": {}
+    },
+    {
+        "label": "Paper",
+        "kind": 6,
+        "importPath": "Paper.models",
+        "description": "Paper.models",
+        "peekOfCode": "class Paper(models.Model):\n    # title = models.CharField(max_length=200)  # The title of the paper\n    # authors = models.ManyToManyField(Author)  # Many-to-many relationship with Authors model\n    # publication_date = models.DateField()  # The publication date of the paper\n    # abstract = models.TextField()  # Summary of the content of the paper\n    # domain = models.CharField(max_length=50)  # Research area of the paper (e.g., NLP, Computer Vision)\n    # pdf_url = models.URLField()  # The path to the PDF file of the paper\n    # references = models.ManyToManyField('self', blank=True, symmetrical=False)  # List of reference Papers\n    # conference_journal = models.CharField(max_length=100)  # Name of conference or journal\n    # rank = models.IntegerField(null=True, blank=True)  # Rank of the paper (optional)",
+        "detail": "Paper.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "Paper.urls",
+        "description": "Paper.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"<url>\", views.chatpaper, name=\"chatpaper\"),\n]",
+        "detail": "Paper.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_llm",
+        "kind": 2,
+        "importPath": "Paper.utils",
+        "description": "Paper.utils",
+        "peekOfCode": "def get_llm(openai_api_key, temperature=0):\n    \"\"\"\n    Get the Language Model from OpenAI.\n    Args:\n    - openai_api_key: The OpenAI API key.\n    - temperature: The temperature parameter for text generation (default: 0).\n    Returns:\n    - The Language Model.\n    \"\"\"\n    llm = OpenAI(temperature=temperature, openai_api_key=openai_api_key)",
+        "detail": "Paper.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_text",
+        "kind": 2,
+        "importPath": "Paper.utils",
+        "description": "Paper.utils",
+        "peekOfCode": "def get_text(pdf_url: str):\n    try:\n        response = requests.get(pdf_url)\n        pdf_bytes = BytesIO(response.content)\n        pdf_reader = PyPDF2.PdfReader(pdf_bytes)\n        text = \"\"\n        for page in pdf_reader.pages:\n            text += page.extract_text()\n        return text\n    except requests.exceptions.RequestException as e:",
+        "detail": "Paper.utils",
+        "documentation": {}
+    },
+    {
+        "label": "summarize_and_create_vectordb",
+        "kind": 2,
+        "importPath": "Paper.utils",
+        "description": "Paper.utils",
+        "peekOfCode": "def summarize_and_create_vectordb(input_text: str, openai_api_key: str):\n    # Split the input text into chunks for processing\n    text_splitter = RecursiveCharacterTextSplitter(\n        separators=[\"\\n\\n\", \"\\n\"], chunk_size=5000, chunk_overlap=500\n    )\n    # Get the language model for summarization\n    llm = get_llm(openai_api_key=openai_api_key)\n    # Create document objects from the input text\n    docs = text_splitter.create_documents([input_text])\n    # Load the summarization chain",
+        "detail": "Paper.utils",
+        "documentation": {}
+    },
+    {
+        "label": "chatpaper",
+        "kind": 2,
+        "importPath": "Paper.views",
+        "description": "Paper.views",
+        "peekOfCode": "def chatpaper(request, url):\n    url = \"https://arxiv.org/pdf/\" + url\n    # query = request.data[\"query\"]\n    data = json.loads(request.body)\n    # query = data.get(\"query\", \"\")\n    query = data[\"query\"]\n    if query == \"\":\n        text = get_text(url)\n        summary = summarize_and_create_vectordb(text, openai_api_key)\n        return JsonResponse({\"summary\": summary})",
+        "detail": "Paper.views",
+        "documentation": {}
+    },
+    {
+        "label": "openai_api_key",
+        "kind": 5,
+        "importPath": "Paper.views",
+        "description": "Paper.views",
+        "peekOfCode": "openai_api_key = os.getenv(\"OPENAI_KEY\")\nmessages = [\n    (\n        \"Bot\",\n        \"👋 Hello there! As your personal document assistant, I'm here to assist you with any document-related needs you may have. How can I help you today?\",\n    ),\n]\n# Create your views here.\n@csrf_exempt\ndef chatpaper(request, url):",
+        "detail": "Paper.views",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "kind": 5,
+        "importPath": "Paper.views",
+        "description": "Paper.views",
+        "peekOfCode": "messages = [\n    (\n        \"Bot\",\n        \"👋 Hello there! As your personal document assistant, I'm here to assist you with any document-related needs you may have. How can I help you today?\",\n    ),\n]\n# Create your views here.\n@csrf_exempt\ndef chatpaper(request, url):\n    url = \"https://arxiv.org/pdf/\" + url",
+        "detail": "Paper.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "PaperManagement.asgi",
+        "description": "PaperManagement.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "PaperManagement.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = \"django-insecure-sp#c!c$_%&%)7!s3i^-jbzl7q#@__&)pgv7g7#yc$+xxz7r3&h\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"localhost\", \"127.0.0.1\"]\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "SECRET_KEY = \"django-insecure-sp#c!c$_%&%)7!s3i^-jbzl7q#@__&)pgv7g7#yc$+xxz7r3&h\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"localhost\", \"127.0.0.1\"]\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = [\"localhost\", \"127.0.0.1\"]\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "ALLOWED_HOSTS = [\"localhost\", \"127.0.0.1\"]\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"Paper\",",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"Paper\",\n    \"User\",\n    \"corsheaders\",",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    \"corsheaders.middleware.CorsMiddleware\",\n    \"django.middleware.security.SecurityMiddleware\",\n    \"django.contrib.sessions.middleware.SessionMiddleware\",\n    \"django.middleware.common.CommonMiddleware\",\n    \"django.middleware.csrf.CsrfViewMiddleware\",\n    \"django.contrib.auth.middleware.AuthenticationMiddleware\",\n    \"django.contrib.messages.middleware.MessageMiddleware\",\n    \"django.middleware.clickjacking.XFrameOptionsMiddleware\",\n]",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "ROOT_URLCONF = \"PaperManagement.urls\"\nTEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",\n                \"django.contrib.auth.context_processors.auth\",",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "WSGI_APPLICATION = \"PaperManagement.wsgi.application\"\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\n# DATABASES = {\n#     'default': {\n#         'ENGINE': 'django.db.backends.sqlite3',\n#         'NAME': BASE_DIR / 'db.sqlite3',\n#     }\n# }\nDATABASES = {",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "DATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.postgresql\",\n        \"NAME\": os.environ.get(\"DB_NAME\"),\n        \"USER\": os.environ.get(\"DB_USER\"),\n        \"PASSWORD\": os.environ.get(\"DB_PASSWORD\"),\n        \"HOST\": os.environ.get(\"DB_HOST\"),\n        \"PORT\": os.environ.get(\"DB_PORT\"),\n    }\n}",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.UserAttributeSimilarityValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.MinimumLengthValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.CommonPasswordValidator\",\n    },",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "TIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"User.CustomUser\"",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"User.CustomUser\"\nCORS_ALLOW_CREDENTIALS = True",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"User.CustomUser\"\nCORS_ALLOW_CREDENTIALS = True\nCORS_ALLOWED_ORIGINS = [",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "STATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"User.CustomUser\"\nCORS_ALLOW_CREDENTIALS = True\nCORS_ALLOWED_ORIGINS = [\n    \"http://localhost:3000\",  # Add your frontend's origin here\n]\nLOGIN_URL = \"/auth/login\"",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"User.CustomUser\"\nCORS_ALLOW_CREDENTIALS = True\nCORS_ALLOWED_ORIGINS = [\n    \"http://localhost:3000\",  # Add your frontend's origin here\n]\nLOGIN_URL = \"/auth/login\"\nLOGIN_REDIRECT_URL = \"/home\"\nAUTHENTICATION_BACKENDS = [\n    \"django.contrib.auth.backends.ModelBackend\",",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "AUTH_USER_MODEL = \"User.CustomUser\"\nCORS_ALLOW_CREDENTIALS = True\nCORS_ALLOWED_ORIGINS = [\n    \"http://localhost:3000\",  # Add your frontend's origin here\n]\nLOGIN_URL = \"/auth/login\"\nLOGIN_REDIRECT_URL = \"/home\"\nAUTHENTICATION_BACKENDS = [\n    \"django.contrib.auth.backends.ModelBackend\",\n]",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_CREDENTIALS",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\nCORS_ALLOWED_ORIGINS = [\n    \"http://localhost:3000\",  # Add your frontend's origin here\n]\nLOGIN_URL = \"/auth/login\"\nLOGIN_REDIRECT_URL = \"/home\"\nAUTHENTICATION_BACKENDS = [\n    \"django.contrib.auth.backends.ModelBackend\",\n]\nSESSION_COOKIE_SECURE = True  # Ensure you're using secure HTTPS connection",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOWED_ORIGINS",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    \"http://localhost:3000\",  # Add your frontend's origin here\n]\nLOGIN_URL = \"/auth/login\"\nLOGIN_REDIRECT_URL = \"/home\"\nAUTHENTICATION_BACKENDS = [\n    \"django.contrib.auth.backends.ModelBackend\",\n]\nSESSION_COOKIE_SECURE = True  # Ensure you're using secure HTTPS connection\nSESSION_COOKIE_SAMESITE = \"None\"",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_URL",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "LOGIN_URL = \"/auth/login\"\nLOGIN_REDIRECT_URL = \"/home\"\nAUTHENTICATION_BACKENDS = [\n    \"django.contrib.auth.backends.ModelBackend\",\n]\nSESSION_COOKIE_SECURE = True  # Ensure you're using secure HTTPS connection\nSESSION_COOKIE_SAMESITE = \"None\"\nSESSION_COOKIE_HTTPONLY = True  # Recommended for security reasons\nSESSION_COOKIE_NAME = \"sessionid\"  # Set your desired cookie name\nCSRF_COOKIE_SECURE = True  # Ensure CSRF cookie is secure",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "LOGIN_REDIRECT_URL = \"/home\"\nAUTHENTICATION_BACKENDS = [\n    \"django.contrib.auth.backends.ModelBackend\",\n]\nSESSION_COOKIE_SECURE = True  # Ensure you're using secure HTTPS connection\nSESSION_COOKIE_SAMESITE = \"None\"\nSESSION_COOKIE_HTTPONLY = True  # Recommended for security reasons\nSESSION_COOKIE_NAME = \"sessionid\"  # Set your desired cookie name\nCSRF_COOKIE_SECURE = True  # Ensure CSRF cookie is secure\nCSRF_COOKIE_SAMESITE = \"None\"",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTHENTICATION_BACKENDS",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "AUTHENTICATION_BACKENDS = [\n    \"django.contrib.auth.backends.ModelBackend\",\n]\nSESSION_COOKIE_SECURE = True  # Ensure you're using secure HTTPS connection\nSESSION_COOKIE_SAMESITE = \"None\"\nSESSION_COOKIE_HTTPONLY = True  # Recommended for security reasons\nSESSION_COOKIE_NAME = \"sessionid\"  # Set your desired cookie name\nCSRF_COOKIE_SECURE = True  # Ensure CSRF cookie is secure\nCSRF_COOKIE_SAMESITE = \"None\"\nSESSION_COOKIE_PATH = \"/\"",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SESSION_COOKIE_SECURE",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "SESSION_COOKIE_SECURE = True  # Ensure you're using secure HTTPS connection\nSESSION_COOKIE_SAMESITE = \"None\"\nSESSION_COOKIE_HTTPONLY = True  # Recommended for security reasons\nSESSION_COOKIE_NAME = \"sessionid\"  # Set your desired cookie name\nCSRF_COOKIE_SECURE = True  # Ensure CSRF cookie is secure\nCSRF_COOKIE_SAMESITE = \"None\"\nSESSION_COOKIE_PATH = \"/\"\nCSRF_COOKIE_PATH = \"/\"",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SESSION_COOKIE_SAMESITE",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "SESSION_COOKIE_SAMESITE = \"None\"\nSESSION_COOKIE_HTTPONLY = True  # Recommended for security reasons\nSESSION_COOKIE_NAME = \"sessionid\"  # Set your desired cookie name\nCSRF_COOKIE_SECURE = True  # Ensure CSRF cookie is secure\nCSRF_COOKIE_SAMESITE = \"None\"\nSESSION_COOKIE_PATH = \"/\"\nCSRF_COOKIE_PATH = \"/\"",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SESSION_COOKIE_HTTPONLY",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "SESSION_COOKIE_HTTPONLY = True  # Recommended for security reasons\nSESSION_COOKIE_NAME = \"sessionid\"  # Set your desired cookie name\nCSRF_COOKIE_SECURE = True  # Ensure CSRF cookie is secure\nCSRF_COOKIE_SAMESITE = \"None\"\nSESSION_COOKIE_PATH = \"/\"\nCSRF_COOKIE_PATH = \"/\"",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SESSION_COOKIE_NAME",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "SESSION_COOKIE_NAME = \"sessionid\"  # Set your desired cookie name\nCSRF_COOKIE_SECURE = True  # Ensure CSRF cookie is secure\nCSRF_COOKIE_SAMESITE = \"None\"\nSESSION_COOKIE_PATH = \"/\"\nCSRF_COOKIE_PATH = \"/\"",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CSRF_COOKIE_SECURE",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "CSRF_COOKIE_SECURE = True  # Ensure CSRF cookie is secure\nCSRF_COOKIE_SAMESITE = \"None\"\nSESSION_COOKIE_PATH = \"/\"\nCSRF_COOKIE_PATH = \"/\"",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CSRF_COOKIE_SAMESITE",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "CSRF_COOKIE_SAMESITE = \"None\"\nSESSION_COOKIE_PATH = \"/\"\nCSRF_COOKIE_PATH = \"/\"",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SESSION_COOKIE_PATH",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "SESSION_COOKIE_PATH = \"/\"\nCSRF_COOKIE_PATH = \"/\"",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CSRF_COOKIE_PATH",
+        "kind": 5,
+        "importPath": "PaperManagement.settings",
+        "description": "PaperManagement.settings",
+        "peekOfCode": "CSRF_COOKIE_PATH = \"/\"",
+        "detail": "PaperManagement.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "PaperManagement.urls",
+        "description": "PaperManagement.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"\", include(\"User.urls\")),\n    # path('home/', include('SearchEngine.urls')),\n    path(\"chatpaper/\", include(\"Paper.urls\")),\n]",
+        "detail": "PaperManagement.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "PaperManagement.wsgi",
+        "description": "PaperManagement.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "PaperManagement.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SearchEngine.migrations.0001_initial",
+        "description": "SearchEngine.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ArxivResult',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=255)),",
+        "detail": "SearchEngine.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SearchEngine.migrations.0002_arxivresult_url",
+        "description": "SearchEngine.migrations.0002_arxivresult_url",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('SearchEngine', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='arxivresult',\n            name='url',\n            field=models.URLField(default='https://example.com'),\n        ),",
+        "detail": "SearchEngine.migrations.0002_arxivresult_url",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SearchEngine.migrations.0003_alter_arxivresult_related",
+        "description": "SearchEngine.migrations.0003_alter_arxivresult_related",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('SearchEngine', '0002_arxivresult_url'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='arxivresult',\n            name='related',\n            field=models.TextField(default=''),\n        ),",
+        "detail": "SearchEngine.migrations.0003_alter_arxivresult_related",
+        "documentation": {}
+    },
+    {
+        "label": "SearchengineConfig",
+        "kind": 6,
+        "importPath": "SearchEngine.apps",
+        "description": "SearchEngine.apps",
+        "peekOfCode": "class SearchengineConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'SearchEngine'",
+        "detail": "SearchEngine.apps",
+        "documentation": {}
+    },
+    {
+        "label": "ArxivResult",
+        "kind": 6,
+        "importPath": "SearchEngine.models",
+        "description": "SearchEngine.models",
+        "peekOfCode": "class ArxivResult(models.Model):\n    title = models.CharField(max_length=255)\n    authors = models.TextField()\n    abstract = models.TextField()\n    arxiv_id = models.CharField(max_length=20, unique=True)\n    published_date = models.DateTimeField()\n    url = models.URLField(default='https://example.com')\n    related = models.TextField(default='')\n    def __str__(self):\n        return self.title",
+        "detail": "SearchEngine.models",
+        "documentation": {}
+    },
+    {
+        "label": "SearchHistory",
+        "kind": 6,
+        "importPath": "SearchEngine.models",
+        "description": "SearchEngine.models",
+        "peekOfCode": "class SearchHistory(models.Model):\n    query = models.CharField(max_length=255)\n    timestamp = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return f\"{self.query} - {self.timestamp}\"\n# from django.contrib.auth.models import User\n# class SearchHistory(models.Model):\n#     user = models.ForeignKey(User, on_delete=models.CASCADE)\n#     query = models.CharField(max_length=255)\n#     timestamp = models.DateTimeField(auto_now_add=True)",
+        "detail": "SearchEngine.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "SearchEngine.urls",
+        "description": "SearchEngine.urls",
+        "peekOfCode": "urlpatterns = [\n    path('api/search/', views.search_arxiv, name='search_arxiv'),\n    path('api/recommended/', views.recommended_papers, name='recommended_papers'),\n]",
+        "detail": "SearchEngine.urls",
+        "documentation": {}
+    },
+    {
+        "label": "search_arxiv",
+        "kind": 2,
+        "importPath": "SearchEngine.views",
+        "description": "SearchEngine.views",
+        "peekOfCode": "def search_arxiv(request):\n    query_string = request.GET.get(\"query\")\n    results = []\n    if query_string:\n        SearchHistory.objects.create(query=query_string)\n    if query_string:\n        # Search arXiv and get the results\n        search_results = Search(query=query_string, max_results=10, sort_by=SortCriterion.Relevance, sort_order=SortOrder.Descending)\n        # Extract relevant data and build a list of dictionaries\n        for result in search_results.results():",
+        "detail": "SearchEngine.views",
+        "documentation": {}
+    },
+    {
+        "label": "recommended_papers",
+        "kind": 2,
+        "importPath": "SearchEngine.views",
+        "description": "SearchEngine.views",
+        "peekOfCode": "def recommended_papers(request):\n    # Get the top 5 most searched queries\n    top_queries = SearchHistory.objects.values('query').annotate(query_count=Count('query')).order_by('-query_count')[:7]\n    recommended_results = []\n    papers = set()\n    for entry in top_queries:\n        query = entry['query']\n        if query in processed_topics:\n            continue\n        # Search arXiv based on the query and get relevant information",
+        "detail": "SearchEngine.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "User.migrations.0001_initial",
+        "description": "User.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('Paper', '0002_rename_authors_author_rename_papers_paper'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='User',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "User.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "User.migrations.0002_customuser_delete_user",
+        "description": "User.migrations.0002_customuser_delete_user",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n        ('User', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='CustomUser',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "User.migrations.0002_customuser_delete_user",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "User.migrations.0003_customuser_topics",
+        "description": "User.migrations.0003_customuser_topics",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('User', '0002_customuser_delete_user'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='customuser',\n            name='topics',\n            field=models.CharField(blank=True, max_length=255, null=True),\n        ),",
+        "detail": "User.migrations.0003_customuser_topics",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "User.migrations.0004_topic_remove_customuser_topics_customuser_topics",
+        "description": "User.migrations.0004_topic_remove_customuser_topics_customuser_topics",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('User', '0003_customuser_topics'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Topic',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100, unique=True)),",
+        "detail": "User.migrations.0004_topic_remove_customuser_topics_customuser_topics",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUserAdmin",
+        "kind": 6,
+        "importPath": "User.admin",
+        "description": "User.admin",
+        "peekOfCode": "class CustomUserAdmin(UserAdmin):\n    list_display = ('email', 'name', 'is_active', 'is_staff', 'date_joined')\n    list_filter = ('is_active', 'is_staff')\n    search_fields = ('email', 'name')\n    ordering = ('-date_joined',)\n    fieldsets = (\n        (None, {'fields': ('email', 'password')}),\n        ('Personal Info', {'fields': ('name', 'topics')}),\n        ('Permissions', {'fields': ('is_active', 'is_staff', 'is_superuser')}),\n        ('Important Dates', {'fields': ('last_login', 'date_joined')}),",
+        "detail": "User.admin",
+        "documentation": {}
+    },
+    {
+        "label": "UserConfig",
+        "kind": 6,
+        "importPath": "User.apps",
+        "description": "User.apps",
+        "peekOfCode": "class UserConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'User'",
+        "detail": "User.apps",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUserManager",
+        "kind": 6,
+        "importPath": "User.models",
+        "description": "User.models",
+        "peekOfCode": "class CustomUserManager(BaseUserManager):\n    def create_user(self, email, name, password=None, **extra_fields):\n        if not email:\n            raise ValueError(\"The Email field must be set\")\n        email = self.normalize_email(email)\n        user = self.model(email=email, name=name, **extra_fields)\n        user.set_password(password)  # Set the password\n        user.save(using=self._db)\n        return user\n    def create_superuser(self, email, name, password=None, **extra_fields):",
+        "detail": "User.models",
+        "documentation": {}
+    },
+    {
+        "label": "Topic",
+        "kind": 6,
+        "importPath": "User.models",
+        "description": "User.models",
+        "peekOfCode": "class Topic(models.Model):\n    name = models.CharField(max_length=100, unique=True)\n    def __str__(self):\n        return self.name\nclass CustomUser(AbstractBaseUser, PermissionsMixin):\n    email = models.EmailField(unique=True)\n    name = models.CharField(max_length=150)\n    # Fields required for Django user authentication\n    is_active = models.BooleanField(default=True)\n    is_staff = models.BooleanField(default=False)",
+        "detail": "User.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "kind": 6,
+        "importPath": "User.models",
+        "description": "User.models",
+        "peekOfCode": "class CustomUser(AbstractBaseUser, PermissionsMixin):\n    email = models.EmailField(unique=True)\n    name = models.CharField(max_length=150)\n    # Fields required for Django user authentication\n    is_active = models.BooleanField(default=True)\n    is_staff = models.BooleanField(default=False)\n    date_joined = models.DateTimeField(default=timezone.now)\n    objects = CustomUserManager()\n    USERNAME_FIELD = \"email\"\n    REQUIRED_FIELDS = [\"name\"]",
+        "detail": "User.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "User.urls",
+        "description": "User.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"\", views.home, name=\"home\"),\n    path(\"auth/login/\", views.login_view, name=\"login\"),\n    path(\"auth/register/\", views.register_view, name=\"register\"),\n    path(\"auth/logout/\", views.logout_view, name=\"logout\"),\n    path('update-topics/', views.update_topics, name='update-topics'),\n]",
+        "detail": "User.urls",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "User.views",
+        "description": "User.views",
+        "peekOfCode": "def home(request):\n    return render(request, \"Authentication/home.html\")\n@csrf_exempt\ndef register_view(request):\n    if request.method == 'POST':\n        # Get data from request body\n        data = json.loads(request.body.decode('utf-8'))\n        name = data.get('name')\n        email = data.get('email')\n        password = data.get('password')",
+        "detail": "User.views",
+        "documentation": {}
+    },
+    {
+        "label": "register_view",
+        "kind": 2,
+        "importPath": "User.views",
+        "description": "User.views",
+        "peekOfCode": "def register_view(request):\n    if request.method == 'POST':\n        # Get data from request body\n        data = json.loads(request.body.decode('utf-8'))\n        name = data.get('name')\n        email = data.get('email')\n        password = data.get('password')\n        # Check if a user with the given email already exists\n        if CustomUser.objects.filter(email=email).exists():\n            return JsonResponse({'message': 'User with this email already exists.'}, status=400)",
+        "detail": "User.views",
+        "documentation": {}
+    },
+    {
+        "label": "login_view",
+        "kind": 2,
+        "importPath": "User.views",
+        "description": "User.views",
+        "peekOfCode": "def login_view(request):\n    if request.method == 'POST':\n        # Get data from request body\n        data = json.loads(request.body.decode('utf-8'))\n        email = data.get('email')\n        password = data.get('password')\n        remember_me = data.get('remember_me') == 'true'\n        user = authenticate(request, username=email, password=password)\n        if user is not None:\n            if user.is_active:",
+        "detail": "User.views",
+        "documentation": {}
+    },
+    {
+        "label": "logout_view",
+        "kind": 2,
+        "importPath": "User.views",
+        "description": "User.views",
+        "peekOfCode": "def logout_view(request):\n    logout(request)\n    return redirect(\"login\")\n@csrf_exempt\n@require_POST\ndef update_topics(request):\n    user = request.user\n    if user.is_authenticated:\n        # User is logged in\n        data = json.loads(request.body.decode('utf-8')).get('selectedTopics')",
+        "detail": "User.views",
+        "documentation": {}
+    },
+    {
+        "label": "update_topics",
+        "kind": 2,
+        "importPath": "User.views",
+        "description": "User.views",
+        "peekOfCode": "def update_topics(request):\n    user = request.user\n    if user.is_authenticated:\n        # User is logged in\n        data = json.loads(request.body.decode('utf-8')).get('selectedTopics')\n        # Get all old topics for the user\n        old_topics = user.topics.all()\n        # Create a set of new topic names\n        new_topic_names = set(data)\n        # Update or create topics and track updated topics",
+        "detail": "User.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'PaperManagement.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]
