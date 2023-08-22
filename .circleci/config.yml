@@ -30,11 +30,18 @@ jobs:
           command: pre-commit run --all-files
 
   build_and_push_ecr:
-    docker:
-      - image: circleci/python:3.8
-
     steps:
       - checkout
+
+      - run:
+          name: Install libs
+          command: apt-get update && apt-get install -y curl
+
+      - run:
+          name: Install Docker
+          command: |
+            curl -fsSL https://get.docker.com -o get-docker.sh
+            sh get-docker.sh
 
       - run:
           name: Build Docker Image
