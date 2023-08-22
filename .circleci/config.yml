@@ -25,11 +25,8 @@ jobs:
             pip install flake8
 
       - run:
-          name: Check code formatting
-          command: |
-            black . --check
-            isort . --check
-            flake8 .
+          name: run pre-commit
+          command: pre-commit run --all-files
 
   # build_and_push_ecr:
   #   machine:

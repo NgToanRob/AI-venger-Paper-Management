@@ -26,9 +26,7 @@ class Migration(migrations.Migration):
                 ("password", models.CharField(max_length=128, verbose_name="password")),
                 (
                     "last_login",
-                    models.DateTimeField(
-                        blank=True, null=True, verbose_name="last login"
-                    ),
+                    models.DateTimeField(blank=True, null=True, verbose_name="last login"),
                 ),
                 (
                     "is_superuser",
@@ -48,15 +46,11 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "groups",
-                    models.ManyToManyField(
-                        blank=True, related_name="customuser_set", to="auth.group"
-                    ),
+                    models.ManyToManyField(blank=True, related_name="customuser_set", to="auth.group"),
                 ),
                 (
                     "user_permissions",
-                    models.ManyToManyField(
-                        blank=True, related_name="customuser_set", to="auth.permission"
-                    ),
+                    models.ManyToManyField(blank=True, related_name="customuser_set", to="auth.permission"),
                 ),
             ],
             options={

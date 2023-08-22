@@ -39,11 +39,7 @@ def search_arxiv(request):
 
 def recommended_papers(request):
     # Get the top 5 most searched queries
-    top_queries = (
-        SearchHistory.objects.values("query")
-        .annotate(query_count=Count("query"))
-        .order_by("-query_count")[:7]
-    )
+    top_queries = SearchHistory.objects.values("query").annotate(query_count=Count("query")).order_by("-query_count")[:7]
 
     recommended_results = []
     processed_topics = set()

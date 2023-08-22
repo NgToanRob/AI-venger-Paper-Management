@@ -33,9 +33,7 @@ def register_view(request):
             # user = User.objects.create_user(email=email, name=name, password=password)
             return JsonResponse({"message": "Registration successful"})
         except IntegrityError:
-            return JsonResponse(
-                {"error": "User with this email already exists"}, status=400
-            )
+            return JsonResponse({"error": "User with this email already exists"}, status=400)
 
     # Return error for unsupported request methods (GET, etc.)
     return JsonResponse({"error": "Invalid request method"}, status=405)
