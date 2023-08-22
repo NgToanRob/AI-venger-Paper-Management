@@ -61,7 +61,7 @@ jobs:
 
       - run:
           name: Authenicate ECR
-          command: aws ecr get-login --no-include-email --region ${AWS_REGION}
+          command: $(aws ecr get-login --no-include-email --region ${AWS_REGION})
 
       - run:
           name: Push Docker Image to ECR
