@@ -25,6 +25,13 @@ class CustomUserManager(BaseUserManager):
         return self.create_user(email, name, password, **extra_fields)
 
 
+class Topic(models.Model):
+    name = models.CharField(max_length=100, unique=True)
+
+    def __str__(self):
+        return self.name
+
+
 class CustomUser(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(unique=True)
     name = models.CharField(max_length=150)
@@ -50,6 +57,8 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
         blank=True,
         related_name='customuser_set'  # Change to a unique related_name
     )
+
+    topics = models.ManyToManyField(Topic, blank=True)
 
     def __str__(self):
         return self.name
