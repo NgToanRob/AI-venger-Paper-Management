@@ -45,13 +45,13 @@ jobs:
             docker build -t project_management .
             docker tag project_management:latest ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/ai-venger
 
-      - run:
-          name: Configure AWS CLI
-          command: |
-            aws configure set aws_access_key_id ${AWS_ACCESS_KEY}
-            aws configure set aws_secret_access_key ${AWS_SECRET_KEY}
-            aws configure set default.region ${AWS_REGION}
-            aws sts get-caller-identity
+      # - run:
+      #     name: Configure AWS CLI
+      #     command: |
+      #       aws configure set aws_access_key_id ${AWS_ACCESS_KEY}
+      #       aws configure set aws_secret_access_key ${AWS_SECRET_KEY}
+      #       aws configure set default.region ${AWS_REGION}
+      #       aws sts get-caller-identity
 
       - run:
           name: Authenicate ECR
