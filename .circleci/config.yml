@@ -31,17 +31,10 @@ jobs:
 
   build_and_push_ecr:
     docker:
-      - image: circleci/python:3.9
+      - image: circleci/build-docker
 
     steps:
-      - setup_remote_docker: # This enables Docker-in-Docker environment
-          version: 20.10.7
-
       - checkout
-
-      - run: |
-          sudo apt-get update
-          sudo apt-get -y install docker-ce
 
       - run:
           name: Build Docker Image
