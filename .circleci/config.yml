@@ -31,7 +31,7 @@ jobs:
 
   build_and_push_ecr:
     docker:
-      - image: circleci/build-docker
+      - image: cimg/base:current
 
     steps:
       - checkout
