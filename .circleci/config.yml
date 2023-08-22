@@ -36,13 +36,13 @@ jobs:
 
       - run:
           name: Install libs
-          command: sudo apt-get update && apt-get install -y curl
+          command: apt-get update && apt-get install -y curl
 
       - run:
           name: Install Docker
           command: |
             curl -fsSL https://get.docker.com -o get-docker.sh
-            sudo sh get-docker.sh
+            sh get-docker.sh
 
       - run:
           name: Build Docker Image
