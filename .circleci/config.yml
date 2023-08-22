@@ -30,25 +30,24 @@ jobs:
           command: pre-commit run --all-files
 
   build_and_push_ecr:
-    machine: true
+    docker:
+      - image: circleci/python:3.9
+
     steps:
+      - setup_remote_docker: # This enables Docker-in-Docker environment
+          version: 20.10.7
+
       - checkout
 
-      - run:
-          name: Install libs
-          command: sudo apt-get update && apt-get install -y curl
-
-      - run:
-          name: Install Docker
-          command: |
-            curl -fsSL https://get.docker.com -o get-docker.sh
-            sh get-docker.sh
+      - run: |
+          sudo apt-get update
+          sudo apt-get -y install docker-ce
 
       - run:
           name: Build Docker Image
           command: |
             docker build -t project_management .
-            docker tag project_management:latest ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/AI-venger-Paper-Management:latest
+            docker tag project_management:latest ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/ai-venger
 
       - run:
           name: Configure AWS CLI
@@ -64,7 +63,7 @@ jobs:
 
       - run:
           name: Push Docker Image to ECR
-          command: docker push ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/AI-venger-Paper-Management:latest
+          command: docker push ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/ai-venger
 
 workflows:
   version: 2
