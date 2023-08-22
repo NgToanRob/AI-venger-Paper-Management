@@ -39,9 +39,6 @@ jobs:
           name: Install Docker
           command: sudo apt-get install -y docker.io
 
-      - setup_remote_docker:
-          version: 18.09.9
-
       - run:
           name: Build Docker Image
           command: |
