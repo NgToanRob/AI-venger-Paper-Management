@@ -532,14 +532,6 @@
         "documentation": {}
     },
     {
-        "label": "Count",
-        "importPath": "django.db.models",
-        "description": "django.db.models",
-        "isExtraImport": true,
-        "detail": "django.db.models",
-        "documentation": {}
-    },
-    {
         "label": "require_POST",
         "importPath": "django.views.decorators.http",
         "description": "django.views.decorators.http",
@@ -577,14 +569,6 @@
         "description": "django.contrib.auth.decorators",
         "isExtraImport": true,
         "detail": "django.contrib.auth.decorators",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -819,7 +803,7 @@
         "kind": 2,
         "importPath": "Paper.views",
         "description": "Paper.views",
-        "peekOfCode": "def chatpaper(request, url):\n    url = \"https://arxiv.org/pdf/\" + url\n    # query = request.data[\"query\"]\n    data = json.loads(request.body)\n    # query = data.get(\"query\", \"\")\n    query = data[\"query\"]\n    if query == \"\":\n        text = get_text(url)\n        summary = summarize_and_create_vectordb(text, openai_api_key)\n        return JsonResponse({\"summary\": summary})",
+        "peekOfCode": "def chatpaper(request, url):\n    url = \"https://arxiv.org/pdf/\" + url\n    # query = request.data[\"query\"]\n    data = json.loads(request.body)\n    # query = data.get(\"query\", \"\")\n    query = data[\"query\"]\n    if query == \"\":\n        text = get_text(url)\n        summary = summarize_and_create_vectordb(text, openai_api_key)\n        print(summary)",
         "detail": "Paper.views",
         "documentation": {}
     },
@@ -1215,7 +1199,7 @@
         "kind": 2,
         "importPath": "SearchEngine.views",
         "description": "SearchEngine.views",
-        "peekOfCode": "def search_arxiv(request):\n    query_string = request.GET.get(\"query\")\n    results = []\n    if query_string:\n        SearchHistory.objects.create(query=query_string)\n    if query_string:\n        # Search arXiv and get the results\n        search_results = Search(query=query_string, max_results=10, sort_by=SortCriterion.Relevance, sort_order=SortOrder.Descending)\n        # Extract relevant data and build a list of dictionaries\n        for result in search_results.results():",
+        "peekOfCode": "def search_arxiv(request):\n    query_string = request.GET.get(\"query\")\n    results = []\n    if request.user.is_authenticated:  # Check if user is logged in\n        if query_string:\n            SearchHistory.objects.create(query=query_string)\n        if query_string:\n            # Search arXiv and get the results\n            search_results = Search(\n                query=query_string,",
         "detail": "SearchEngine.views",
         "documentation": {}
     },
@@ -1224,7 +1208,7 @@
         "kind": 2,
         "importPath": "SearchEngine.views",
         "description": "SearchEngine.views",
-        "peekOfCode": "def recommended_papers(request):\n    # Get the top 5 most searched queries\n    top_queries = SearchHistory.objects.values('query').annotate(query_count=Count('query')).order_by('-query_count')[:7]\n    recommended_results = []\n    papers = set()\n    for entry in top_queries:\n        query = entry['query']\n        if query in processed_topics:\n            continue\n        # Search arXiv based on the query and get relevant information",
+        "peekOfCode": "def recommended_papers(request):\n    user = request.user\n    if not user.is_authenticated:\n        return JsonResponse({\"message\": \"Unauthorized\"}, status=401)\n    interested_topics = (\n        user.topics.all()\n    )  # Assuming \"topics\" is a related name in the User model\n    recommended_results = []\n    papers = set()\n    for topic in interested_topics:",
         "detail": "SearchEngine.views",
         "documentation": {}
     },
