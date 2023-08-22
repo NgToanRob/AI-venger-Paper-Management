@@ -36,7 +36,7 @@ jobs:
 
       - run:
           name: Install libs
-          command: apt-get update && apt-get install -y curl
+          command: sudo apt-get update && apt-get install -y curl
 
       - run:
           name: Install Docker
