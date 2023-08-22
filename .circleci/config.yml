@@ -1,0 +1,76 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.8
+    steps:
+      - checkout
+      # Install dependencies
+      - run:
+          name: Install Dependencies
+          command: pip install -r requirements.txt
+
+  check-formatting:
+    docker:
+      - image: circleci/python:3.8
+
+    steps:
+      - checkout
+      - run:
+          name: Install libs
+          command: |
+            pip install black
+            # pip install isort
+            pip install flake8
+            pip install pre-commit
+
+      - run:
+          name: run pre-commit
+          command: pre-commit run --all-files
+
+  build_and_push_ecr:
+    docker:
+      - image: circleci/buildpack-deps
+
+    steps:
+      - checkout
+
+      - setup_remote_docker:
+          version: 20.10.7
+
+      - run:
+          name: Install AWS CLI
+          command: |
+            sudo apt-get update
+            sudo apt-get install -y awscli
+
+      - run:
+          name: Build Docker Image
+          command: |
+            docker build -t project_management .
+            docker tag project_management:latest ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/ai-venger
+
+      - run:
+          name: Configure AWS CLI
+          command: |
+            aws configure set aws_access_key_id ${AWS_ACCESS_KEY}
+            aws configure set aws_secret_access_key ${AWS_SECRET_KEY}
+            aws configure set default.region ${AWS_REGION}
+            aws sts get-caller-identity
+
+      - run:
+          name: Authenicate ECR
+          command: $(aws ecr get-login --no-include-email --region ${AWS_REGION})
+
+      - run:
+          name: Push Docker Image to ECR
+          command: docker push ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/ai-venger
+
+workflows:
+  version: 2
+  build-workflow:
+    jobs:
+      - build
+      - check-formatting
+      - build_and_push_ecr

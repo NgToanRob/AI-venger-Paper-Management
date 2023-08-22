@@ -1,4 +1,5 @@
-from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
+from django.contrib.auth.models import (AbstractBaseUser, BaseUserManager,
+                                        PermissionsMixin)
 from django.db import models
 from django.utils import timezone
 
@@ -14,13 +15,13 @@ class CustomUserManager(BaseUserManager):
         return user
 
     def create_superuser(self, email, name, password=None, **extra_fields):
-        extra_fields.setdefault('is_staff', True)
-        extra_fields.setdefault('is_superuser', True)
+        extra_fields.setdefault("is_staff", True)
+        extra_fields.setdefault("is_superuser", True)
 
-        if extra_fields.get('is_staff') is not True:
-            raise ValueError('Superuser must have is_staff=True.')
-        if extra_fields.get('is_superuser') is not True:
-            raise ValueError('Superuser must have is_superuser=True.')
+        if extra_fields.get("is_staff") is not True:
+            raise ValueError("Superuser must have is_staff=True.")
+        if extra_fields.get("is_superuser") is not True:
+            raise ValueError("Superuser must have is_superuser=True.")
 
         return self.create_user(email, name, password, **extra_fields)
 
@@ -36,19 +37,19 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
 
     objects = CustomUserManager()
 
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['name']
+    USERNAME_FIELD = "email"
+    REQUIRED_FIELDS = ["name"]
 
     # Provide unique related_names for groups and user_permissions
     groups = models.ManyToManyField(
-        'auth.Group',
+        "auth.Group",
         blank=True,
-        related_name='customuser_set'  # Change to a unique related_name
+        related_name="customuser_set",  # Change to a unique related_name
     )
     user_permissions = models.ManyToManyField(
-        'auth.Permission',
+        "auth.Permission",
         blank=True,
-        related_name='customuser_set'  # Change to a unique related_name
+        related_name="customuser_set",  # Change to a unique related_name
     )
 
     def __str__(self):

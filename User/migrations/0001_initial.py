@@ -4,23 +4,33 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
-        ('Paper', '0002_rename_authors_author_rename_papers_paper'),
+        ("Paper", "0002_rename_authors_author_rename_papers_paper"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='User',
+            name="User",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=100)),
-                ('research_interests', models.CharField(max_length=200)),
-                ('subscribed_journals', models.CharField(max_length=200)),
-                ('favorite_authors', models.ManyToManyField(blank=True, to='Paper.author')),
-                ('saved_papers', models.ManyToManyField(blank=True, to='Paper.paper')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=100)),
+                ("research_interests", models.CharField(max_length=200)),
+                ("subscribed_journals", models.CharField(max_length=200)),
+                (
+                    "favorite_authors",
+                    models.ManyToManyField(blank=True, to="Paper.author"),
+                ),
+                ("saved_papers", models.ManyToManyField(blank=True, to="Paper.paper")),
             ],
         ),
     ]
