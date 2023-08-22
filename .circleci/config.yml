@@ -40,7 +40,6 @@ jobs:
           command: sudo apt-get install -y docker.io
 
       - setup_remote_docker:
-          version: 20.10.8
 
       - run:
           name: Build Docker Image
