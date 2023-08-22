@@ -37,7 +37,7 @@ jobs:
       - checkout
       - run:
           name: Install Docker
-          command: sudo apt-get install -y docker.io
+          command: apt-get install -y docker.io
 
       - run:
           name: Build Docker Image
