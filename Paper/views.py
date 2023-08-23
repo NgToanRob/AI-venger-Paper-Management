@@ -45,7 +45,7 @@ def chatpaper(request, id):
     # summary = summarize_and_create_vectordb(text, openai_api_key)
 
     # Get the embeddings for similarity search
-    embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
+    embeddings = OpenAIEmbeddings(os.environ.get('OPENAI_DEPLOYMENT_NAME'))
 
     # Load the vector store for similarity search
     new_db = FAISS.load_local("faiss_index", embeddings)
@@ -54,7 +54,7 @@ def chatpaper(request, id):
     docs = new_db.similarity_search(query, k=2)
 
     # Get the language model for question answering
-    llm = get_llm(openai_api_key=openai_api_key)
+    llm = get_llm()
 
     # Load the question answering chain
     chain = load_qa_chain(llm, chain_type="stuff")

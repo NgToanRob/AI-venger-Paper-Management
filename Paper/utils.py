@@ -6,9 +6,12 @@ from langchain.vectorstores import FAISS
 import requests
 from io import BytesIO
 import PyPDF2
+from langchain.llms import AzureOpenAI
+import os
+from langchain.chat_models import AzureChatOpenAI
 
 
-def get_llm(openai_api_key, temperature=0):
+def get_llm():
     """
     Get the Language Model from OpenAI.
 
@@ -19,7 +22,14 @@ def get_llm(openai_api_key, temperature=0):
     Returns:
     - The Language Model.
     """
-    llm = OpenAI(temperature=temperature, openai_api_key=openai_api_key)
+    llm = AzureOpenAI(
+        openai_api_base=os.environ.get("OPENAI_API_BASE"),
+        openai_api_version=os.environ.get("OPENAI_API_VERSION"),
+        deployment_name=os.environ.get("OPENAI_DEPLOYMENT_NAME"),
+        openai_api_key=os.environ.get("OPENAI_API_KEY"),
+        openai_api_type=os.environ.get("OPENAI_API_TYPE"),
+        model_name="text-davinci-002"
+    )
     return llm
 
 
@@ -45,7 +55,7 @@ def summarize_and_create_vectordb(input_text: str, openai_api_key: str):
     )
 
     # Get the language model for summarization
-    llm = get_llm(openai_api_key=openai_api_key)
+    llm = get_llm()
 
     # Create document objects from the input text
     docs = text_splitter.create_documents([input_text])
