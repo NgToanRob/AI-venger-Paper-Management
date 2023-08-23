@@ -9,9 +9,8 @@ from django.views.decorators.http import require_POST
 import json
 from django.contrib.auth import authenticate, login, logout
 from .models import Topic, CustomUser
-from django.http import JsonResponse
-from django.contrib.auth import authenticate, login
 from django.middleware.csrf import get_token
+from django.shortcuts import redirect
 
 
 @login_required(login_url="login")
@@ -71,9 +70,17 @@ def login_view(request):
     return JsonResponse({'message': 'Invalid request method.'}, status=405)
 
 
+
+
+@csrf_exempt
 def logout_view(request):
+    # Logout the user
     logout(request)
-    return redirect("login")
+    
+    # Delete the authentication cookies
+    response = JsonResponse({'message': 'Logout successful.'})
+    # response.delete_cookie('your_auth_cookie_name')  # Replace with your actual cookie name
+    return response
 
 
 @csrf_exempt
@@ -106,3 +113,11 @@ def update_topics(request):
     else:
         # User is not logged in
         return JsonResponse({'error': 'User not authenticated'}, status=401)
+
+@csrf_exempt
+def check_authentication(request):
+    user = request.user
+    if user.is_authenticated:
+        return JsonResponse({'authenticated': True})
+    else:
+        return JsonResponse({'authenticated': False})
