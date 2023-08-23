@@ -224,6 +224,98 @@
         "documentation": {}
     },
     {
+        "label": "openai",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "openai",
+        "description": "openai",
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "AzureOpenAI",
+        "importPath": "langchain.llms",
+        "description": "langchain.llms",
+        "isExtraImport": true,
+        "detail": "langchain.llms",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAIEmbeddings",
+        "importPath": "langchain.embeddings",
+        "description": "langchain.embeddings",
+        "isExtraImport": true,
+        "detail": "langchain.embeddings",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAIEmbeddings",
+        "importPath": "langchain.embeddings",
+        "description": "langchain.embeddings",
+        "isExtraImport": true,
+        "detail": "langchain.embeddings",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAIEmbeddings",
+        "importPath": "langchain.embeddings",
+        "description": "langchain.embeddings",
+        "isExtraImport": true,
+        "detail": "langchain.embeddings",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -320,22 +412,6 @@
         "documentation": {}
     },
     {
-        "label": "OpenAIEmbeddings",
-        "importPath": "langchain.embeddings",
-        "description": "langchain.embeddings",
-        "isExtraImport": true,
-        "detail": "langchain.embeddings",
-        "documentation": {}
-    },
-    {
-        "label": "OpenAIEmbeddings",
-        "importPath": "langchain.embeddings",
-        "description": "langchain.embeddings",
-        "isExtraImport": true,
-        "detail": "langchain.embeddings",
-        "documentation": {}
-    },
-    {
         "label": "FAISS",
         "importPath": "langchain.vectorstores",
         "description": "langchain.vectorstores",
@@ -349,15 +425,6 @@
         "description": "langchain.vectorstores",
         "isExtraImport": true,
         "detail": "langchain.vectorstores",
-        "documentation": {}
-    },
-    {
-        "label": "requests",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "requests",
-        "description": "requests",
-        "detail": "requests",
         "documentation": {}
     },
     {
@@ -402,31 +469,6 @@
         "documentation": {}
     },
     {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
         "label": "csrf_exempt",
         "importPath": "django.views.decorators.csrf",
         "description": "django.views.decorators.csrf",
@@ -480,15 +522,6 @@
         "description": "django.http",
         "isExtraImport": true,
         "detail": "django.http",
-        "documentation": {}
-    },
-    {
-        "label": "json",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
         "documentation": {}
     },
     {
@@ -763,11 +796,101 @@
         "documentation": {}
     },
     {
+        "label": "openai_api_key",
+        "kind": 5,
+        "importPath": "Paper.test",
+        "description": "Paper.test",
+        "peekOfCode": "openai_api_key = os.getenv(\"OPENAI_KEY\")\nos.environ[\"OPENAI_API_TYPE\"] = \"azure\"\nos.environ[\"OPENAI_API_BASE\"] = \"https://bootcamp-gpt-ae.openai.azure.com/\"\nos.environ[\"OPENAI_API_KEY\"] = openai_api_key\nos.environ[\"OPENAI_API_VERSION\"] = \"2023-05-15\"\n# # openai.api_key = openai_api_key\n# # openai.api_base = \"https://bootcamp-gpt-ae.openai.azure.com/\"  # your endpoint should look like the following https://YOUR_RESOURCE_NAME.openai.azure.com/\n# # openai.api_type = \"azure\"\n# # openai.api_version = \"2023-05-15\"  # this may change in the future\n# llm = AzureOpenAI(",
+        "detail": "Paper.test",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"OPENAI_API_TYPE\"]",
+        "kind": 5,
+        "importPath": "Paper.test",
+        "description": "Paper.test",
+        "peekOfCode": "os.environ[\"OPENAI_API_TYPE\"] = \"azure\"\nos.environ[\"OPENAI_API_BASE\"] = \"https://bootcamp-gpt-ae.openai.azure.com/\"\nos.environ[\"OPENAI_API_KEY\"] = openai_api_key\nos.environ[\"OPENAI_API_VERSION\"] = \"2023-05-15\"\n# # openai.api_key = openai_api_key\n# # openai.api_base = \"https://bootcamp-gpt-ae.openai.azure.com/\"  # your endpoint should look like the following https://YOUR_RESOURCE_NAME.openai.azure.com/\n# # openai.api_type = \"azure\"\n# # openai.api_version = \"2023-05-15\"  # this may change in the future\n# llm = AzureOpenAI(\n#     temperature=0,",
+        "detail": "Paper.test",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"OPENAI_API_BASE\"]",
+        "kind": 5,
+        "importPath": "Paper.test",
+        "description": "Paper.test",
+        "peekOfCode": "os.environ[\"OPENAI_API_BASE\"] = \"https://bootcamp-gpt-ae.openai.azure.com/\"\nos.environ[\"OPENAI_API_KEY\"] = openai_api_key\nos.environ[\"OPENAI_API_VERSION\"] = \"2023-05-15\"\n# # openai.api_key = openai_api_key\n# # openai.api_base = \"https://bootcamp-gpt-ae.openai.azure.com/\"  # your endpoint should look like the following https://YOUR_RESOURCE_NAME.openai.azure.com/\n# # openai.api_type = \"azure\"\n# # openai.api_version = \"2023-05-15\"  # this may change in the future\n# llm = AzureOpenAI(\n#     temperature=0,\n#     openai_api_key=openai_api_key,",
+        "detail": "Paper.test",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"OPENAI_API_KEY\"]",
+        "kind": 5,
+        "importPath": "Paper.test",
+        "description": "Paper.test",
+        "peekOfCode": "os.environ[\"OPENAI_API_KEY\"] = openai_api_key\nos.environ[\"OPENAI_API_VERSION\"] = \"2023-05-15\"\n# # openai.api_key = openai_api_key\n# # openai.api_base = \"https://bootcamp-gpt-ae.openai.azure.com/\"  # your endpoint should look like the following https://YOUR_RESOURCE_NAME.openai.azure.com/\n# # openai.api_type = \"azure\"\n# # openai.api_version = \"2023-05-15\"  # this may change in the future\n# llm = AzureOpenAI(\n#     temperature=0,\n#     openai_api_key=openai_api_key,\n#     deployment_name=\"bootcamp-chatgpt\",",
+        "detail": "Paper.test",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"OPENAI_API_VERSION\"]",
+        "kind": 5,
+        "importPath": "Paper.test",
+        "description": "Paper.test",
+        "peekOfCode": "os.environ[\"OPENAI_API_VERSION\"] = \"2023-05-15\"\n# # openai.api_key = openai_api_key\n# # openai.api_base = \"https://bootcamp-gpt-ae.openai.azure.com/\"  # your endpoint should look like the following https://YOUR_RESOURCE_NAME.openai.azure.com/\n# # openai.api_type = \"azure\"\n# # openai.api_version = \"2023-05-15\"  # this may change in the future\n# llm = AzureOpenAI(\n#     temperature=0,\n#     openai_api_key=openai_api_key,\n#     deployment_name=\"bootcamp-chatgpt\",\n#     model_name=\"gpt-4\",",
+        "detail": "Paper.test",
+        "documentation": {}
+    },
+    {
+        "label": "deployment_name",
+        "kind": 5,
+        "importPath": "Paper.test",
+        "description": "Paper.test",
+        "peekOfCode": "deployment_name = \"bootcamp-chatgpt\"  # This will correspond to the custom name you chose for your deployment when you deployed a model.\n# response = openai.ChatCompletion.create(\n#     engine=deployment_name,  # replace this value with the deployment name you chose when you deployed the associated model.\n#     messages=[],\n#     temperature=0,\n#     max_tokens=350,\n#     top_p=0.95,\n#     frequency_penalty=0,\n#     presence_penalty=0,\n#     stop=None,",
+        "detail": "Paper.test",
+        "documentation": {}
+    },
+    {
+        "label": "embeddings",
+        "kind": 5,
+        "importPath": "Paper.test",
+        "description": "Paper.test",
+        "peekOfCode": "embeddings = OpenAIEmbeddings(\n    deployment=deployment_name, model=\"text-embedding-ada-002\"\n)\ntext = \"This is a test document.\"\nquery_result = embeddings.embed_query(text)\ndoc_result = embeddings.embed_documents([text])\nprint(query_result)",
+        "detail": "Paper.test",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "Paper.test",
+        "description": "Paper.test",
+        "peekOfCode": "text = \"This is a test document.\"\nquery_result = embeddings.embed_query(text)\ndoc_result = embeddings.embed_documents([text])\nprint(query_result)",
+        "detail": "Paper.test",
+        "documentation": {}
+    },
+    {
+        "label": "query_result",
+        "kind": 5,
+        "importPath": "Paper.test",
+        "description": "Paper.test",
+        "peekOfCode": "query_result = embeddings.embed_query(text)\ndoc_result = embeddings.embed_documents([text])\nprint(query_result)",
+        "detail": "Paper.test",
+        "documentation": {}
+    },
+    {
+        "label": "doc_result",
+        "kind": 5,
+        "importPath": "Paper.test",
+        "description": "Paper.test",
+        "peekOfCode": "doc_result = embeddings.embed_documents([text])\nprint(query_result)",
+        "detail": "Paper.test",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "Paper.urls",
         "description": "Paper.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"<url>\", views.chatpaper, name=\"chatpaper\"),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"<id>\", views.chatpaper, name=\"chatpaper\"),\n]",
         "detail": "Paper.urls",
         "documentation": {}
     },
@@ -803,7 +926,7 @@
         "kind": 2,
         "importPath": "Paper.views",
         "description": "Paper.views",
-        "peekOfCode": "def chatpaper(request, url):\n    url = \"https://arxiv.org/pdf/\" + url\n    # query = request.data[\"query\"]\n    data = json.loads(request.body)\n    # query = data.get(\"query\", \"\")\n    query = data[\"query\"]\n    if query == \"\":\n        text = get_text(url)\n        summary = summarize_and_create_vectordb(text, openai_api_key)\n        print(summary)",
+        "peekOfCode": "def chatpaper(request, id):\n    url = \"https://arxiv.org/pdf/\" + id\n    # query = request.data[\"query\"]\n    data = json.loads(request.body)\n    # query = data.get(\"query\", \"\")\n    query = data[\"query\"]\n    if query == \"\":\n        text = get_text(url)\n        summary = summarize_and_create_vectordb(text, openai_api_key)\n        return JsonResponse({\"summary\": summary})",
         "detail": "Paper.views",
         "documentation": {}
     },
@@ -812,7 +935,7 @@
         "kind": 5,
         "importPath": "Paper.views",
         "description": "Paper.views",
-        "peekOfCode": "openai_api_key = os.getenv(\"OPENAI_KEY\")\nmessages = [\n    (\n        \"Bot\",\n        \"👋 Hello there! As your personal document assistant, I'm here to assist you with any document-related needs you may have. How can I help you today?\",\n    ),\n]\n# Create your views here.\n@csrf_exempt\ndef chatpaper(request, url):",
+        "peekOfCode": "openai_api_key = os.getenv(\"OPENAI_KEY\")\nmessages = [\n    (\n        \"Bot\",\n        \"👋 Hello there! As your personal document assistant, I'm here to assist you with any document-related needs you may have. How can I help you today?\",\n    ),\n]\n# Create your views here.\n@csrf_exempt\ndef chatpaper(request, id):",
         "detail": "Paper.views",
         "documentation": {}
     },
@@ -821,7 +944,7 @@
         "kind": 5,
         "importPath": "Paper.views",
         "description": "Paper.views",
-        "peekOfCode": "messages = [\n    (\n        \"Bot\",\n        \"👋 Hello there! As your personal document assistant, I'm here to assist you with any document-related needs you may have. How can I help you today?\",\n    ),\n]\n# Create your views here.\n@csrf_exempt\ndef chatpaper(request, url):\n    url = \"https://arxiv.org/pdf/\" + url",
+        "peekOfCode": "messages = [\n    (\n        \"Bot\",\n        \"👋 Hello there! As your personal document assistant, I'm here to assist you with any document-related needs you may have. How can I help you today?\",\n    ),\n]\n# Create your views here.\n@csrf_exempt\ndef chatpaper(request, id):\n    url = \"https://arxiv.org/pdf/\" + id",
         "detail": "Paper.views",
         "documentation": {}
     },
@@ -1118,7 +1241,7 @@
         "kind": 5,
         "importPath": "PaperManagement.urls",
         "description": "PaperManagement.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"\", include(\"User.urls\")),\n    # path('home/', include('SearchEngine.urls')),\n    path(\"chatpaper/\", include(\"Paper.urls\")),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"\", include(\"User.urls\")),\n    path(\"home/\", include(\"SearchEngine.urls\")),\n    path(\"chatpaper/\", include(\"Paper.urls\")),\n]",
         "detail": "PaperManagement.urls",
         "documentation": {}
     },
@@ -1307,7 +1430,7 @@
         "kind": 2,
         "importPath": "User.views",
         "description": "User.views",
-        "peekOfCode": "def home(request):\n    return render(request, \"Authentication/home.html\")\n@csrf_exempt\ndef register_view(request):\n    if request.method == 'POST':\n        # Get data from request body\n        data = json.loads(request.body.decode('utf-8'))\n        name = data.get('name')\n        email = data.get('email')\n        password = data.get('password')",
+        "peekOfCode": "def home(request):\n    return render(request, \"Authentication/home.html\")\n@csrf_exempt\ndef register_view(request):\n    if request.method == \"POST\":\n        # Get data from request body\n        data = json.loads(request.body.decode(\"utf-8\"))\n        name = data.get(\"name\")\n        email = data.get(\"email\")\n        password = data.get(\"password\")",
         "detail": "User.views",
         "documentation": {}
     },
@@ -1316,7 +1439,7 @@
         "kind": 2,
         "importPath": "User.views",
         "description": "User.views",
-        "peekOfCode": "def register_view(request):\n    if request.method == 'POST':\n        # Get data from request body\n        data = json.loads(request.body.decode('utf-8'))\n        name = data.get('name')\n        email = data.get('email')\n        password = data.get('password')\n        # Check if a user with the given email already exists\n        if CustomUser.objects.filter(email=email).exists():\n            return JsonResponse({'message': 'User with this email already exists.'}, status=400)",
+        "peekOfCode": "def register_view(request):\n    if request.method == \"POST\":\n        # Get data from request body\n        data = json.loads(request.body.decode(\"utf-8\"))\n        name = data.get(\"name\")\n        email = data.get(\"email\")\n        password = data.get(\"password\")\n        # Check if a user with the given email already exists\n        if CustomUser.objects.filter(email=email).exists():\n            return JsonResponse(",
         "detail": "User.views",
         "documentation": {}
     },
@@ -1325,7 +1448,7 @@
         "kind": 2,
         "importPath": "User.views",
         "description": "User.views",
-        "peekOfCode": "def login_view(request):\n    if request.method == 'POST':\n        # Get data from request body\n        data = json.loads(request.body.decode('utf-8'))\n        email = data.get('email')\n        password = data.get('password')\n        remember_me = data.get('remember_me') == 'true'\n        user = authenticate(request, username=email, password=password)\n        if user is not None:\n            if user.is_active:",
+        "peekOfCode": "def login_view(request):\n    if request.method == \"POST\":\n        # Get data from request body\n        data = json.loads(request.body.decode(\"utf-8\"))\n        email = data.get(\"email\")\n        password = data.get(\"password\")\n        remember_me = data.get(\"remember_me\") == \"true\"\n        user = authenticate(request, username=email, password=password)\n        if user is not None:\n            if user.is_active:",
         "detail": "User.views",
         "documentation": {}
     },
@@ -1334,7 +1457,7 @@
         "kind": 2,
         "importPath": "User.views",
         "description": "User.views",
-        "peekOfCode": "def logout_view(request):\n    logout(request)\n    return redirect(\"login\")\n@csrf_exempt\n@require_POST\ndef update_topics(request):\n    user = request.user\n    if user.is_authenticated:\n        # User is logged in\n        data = json.loads(request.body.decode('utf-8')).get('selectedTopics')",
+        "peekOfCode": "def logout_view(request):\n    logout(request)\n    return redirect(\"login\")\n@csrf_exempt\n@require_POST\ndef update_topics(request):\n    user = request.user\n    if user.is_authenticated:\n        # User is logged in\n        data = json.loads(request.body.decode(\"utf-8\")).get(\"selectedTopics\")",
         "detail": "User.views",
         "documentation": {}
     },
@@ -1343,7 +1466,7 @@
         "kind": 2,
         "importPath": "User.views",
         "description": "User.views",
-        "peekOfCode": "def update_topics(request):\n    user = request.user\n    if user.is_authenticated:\n        # User is logged in\n        data = json.loads(request.body.decode('utf-8')).get('selectedTopics')\n        # Get all old topics for the user\n        old_topics = user.topics.all()\n        # Create a set of new topic names\n        new_topic_names = set(data)\n        # Update or create topics and track updated topics",
+        "peekOfCode": "def update_topics(request):\n    user = request.user\n    if user.is_authenticated:\n        # User is logged in\n        data = json.loads(request.body.decode(\"utf-8\")).get(\"selectedTopics\")\n        # Get all old topics for the user\n        old_topics = user.topics.all()\n        # Create a set of new topic names\n        new_topic_names = set(data)\n        # Update or create topics and track updated topics",
         "detail": "User.views",
         "documentation": {}
     },

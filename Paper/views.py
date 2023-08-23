@@ -25,8 +25,8 @@ messages = [
 
 # Create your views here.
 @csrf_exempt
-def chatpaper(request, url):
-    url = "https://arxiv.org/pdf/" + url
+def chatpaper(request, id):
+    url = "https://arxiv.org/pdf/" + id
 
     # query = request.data["query"]
 
@@ -38,7 +38,6 @@ def chatpaper(request, url):
     if query == "":
         text = get_text(url)
         summary = summarize_and_create_vectordb(text, openai_api_key)
-        print(summary)
         return JsonResponse({"summary": summary})
 
     # text = get_text(url)
