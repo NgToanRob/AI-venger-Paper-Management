@@ -1,18 +1,12 @@
 from django.shortcuts import render
-from langchain import OpenAI
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
-from langchain.chains.question_answering import load_qa_chain
-import os
-from dotenv import load_dotenv
-from .utils import get_text, summarize_and_create_vectordb, get_llm
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
+from langchain.embeddings import HuggingFaceEmbeddings
+from langchain.vectorstores import FAISS
+from langchain.chains.question_answering import load_qa_chain
+from .utils import get_text, summarize_and_create_vectordb, get_llm
 import json
-
-# Load the env
-load_dotenv()
-openai_api_key = os.getenv("OPENAI_KEY")
+import os
 
 
 messages = [
@@ -28,25 +22,16 @@ messages = [
 def chatpaper(request, id):
     url = "https://arxiv.org/pdf/" + id
 
-    # query = request.data["query"]
-
     data = json.loads(request.body)
 
-    # query = data.get("query", "")
     query = data["query"]
 
     if query == "":
         text = get_text(url)
-        summary = summarize_and_create_vectordb(text, openai_api_key)
+        summary = summarize_and_create_vectordb(text)
         return JsonResponse({"summary": summary})
 
-    # text = get_text(url)
-
-    # summary = summarize_and_create_vectordb(text, openai_api_key)
-
-    # Get the embeddings for similarity search
-    embeddings = OpenAIEmbeddings(os.environ.get('OPENAI_DEPLOYMENT_NAME'))
-
+    embeddings = HuggingFaceEmbeddings()
     # Load the vector store for similarity search
     new_db = FAISS.load_local("faiss_index", embeddings)
 
@@ -61,9 +46,5 @@ def chatpaper(request, id):
 
     # Perform question answering on the input documents
     answer = chain.run(input_documents=docs, question=query)
-
-    # # Add the user query and bot response to the messages list
-    # messages.append(("You", f"{query}"))
-    # messages.append(("Bot", f"{response}"))
 
     return JsonResponse({"answer": answer})

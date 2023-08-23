@@ -1,34 +1,21 @@
-from langchain import OpenAI
 from langchain.chains.summarize import load_summarize_chain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings import OpenAIEmbeddings
+from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
-import requests
-from io import BytesIO
-import PyPDF2
-from langchain.llms import AzureOpenAI
-import os
 from langchain.chat_models import AzureChatOpenAI
+from io import BytesIO
+import requests
+import PyPDF2
+import os
 
 
 def get_llm():
-    """
-    Get the Language Model from OpenAI.
-
-    Args:
-    - openai_api_key: The OpenAI API key.
-    - temperature: The temperature parameter for text generation (default: 0).
-
-    Returns:
-    - The Language Model.
-    """
-    llm = AzureOpenAI(
+    llm = AzureChatOpenAI(
         openai_api_base=os.environ.get("OPENAI_API_BASE"),
         openai_api_version=os.environ.get("OPENAI_API_VERSION"),
         deployment_name=os.environ.get("OPENAI_DEPLOYMENT_NAME"),
         openai_api_key=os.environ.get("OPENAI_API_KEY"),
         openai_api_type=os.environ.get("OPENAI_API_TYPE"),
-        model_name="text-davinci-002"
     )
     return llm
 
@@ -48,7 +35,7 @@ def get_text(pdf_url: str):
         return None
 
 
-def summarize_and_create_vectordb(input_text: str, openai_api_key: str):
+def summarize_and_create_vectordb(input_text: str):
     # Split the input text into chunks for processing
     text_splitter = RecursiveCharacterTextSplitter(
         separators=["\n\n", "\n"], chunk_size=5000, chunk_overlap=500
@@ -70,10 +57,7 @@ def summarize_and_create_vectordb(input_text: str, openai_api_key: str):
     # Generate the summary
     result = summary_chain.run(docs)
 
-    # Get the embeddings for the documents
-    embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
-
-    # vectors = embeddings.embed_documents([x.page_content for x in docs])
+    embeddings = HuggingFaceEmbeddings()
 
     # Create a vector store for similarity search
     db = FAISS.from_documents(docs, embeddings)
