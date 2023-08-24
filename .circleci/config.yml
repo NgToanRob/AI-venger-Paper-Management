@@ -94,7 +94,7 @@ jobs:
               --family my-ecs-task-family \
               --container-definitions '[{
                   "name": "paper_management",
-                  "image": "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/ai-venger:latest",
+                  "image": "ai-venger:latest",
                   "memory": 512,
                   "cpu": 256
               }]' \
