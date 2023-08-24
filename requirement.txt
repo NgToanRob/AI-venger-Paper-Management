@@ -1,4 +1,0 @@
-django==4.1.7
-psycopg2-binary==2.9.7
-arxiv==1.4.8
-python-dotenv==1.0.0
