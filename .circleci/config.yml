@@ -80,6 +80,14 @@ jobs:
             sudo apt-get install -y awscli
 
       - run:
+          name: Configure AWS CLI
+          command: |
+            aws configure set aws_access_key_id ${AWS_ACCESS_KEY}
+            aws configure set aws_secret_access_key ${AWS_SECRET_KEY}
+            aws configure set default.region ${AWS_REGION}
+            aws sts get-caller-identity
+
+      - run:
           name: Create ECS Task Definition and Service
           command: |
             aws ecs register-task-definition \
