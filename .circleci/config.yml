@@ -90,6 +90,7 @@ jobs:
                   "memory": 512,
                   "cpu": 256
               }]'
+              --region ${AWS_REGION}
 
             aws ecs create-service \
               --cluster my-ecs-cluster \
