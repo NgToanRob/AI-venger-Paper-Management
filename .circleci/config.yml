@@ -21,7 +21,6 @@ jobs:
           name: Install libs
           command: |
             pip install black
-            # pip install isort
             pip install flake8
             pip install pre-commit
 
