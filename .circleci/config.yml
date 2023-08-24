@@ -66,6 +66,31 @@ jobs:
           name: Push Docker Image to ECR
           command: docker push ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/ai-venger
 
+  build_and_push_ecs:
+    docker:
+      - image: circleci/buildpack-deps
+
+    steps:
+      - checkout
+
+      - run:
+          name: Create ECS Task Definition and Service
+          command: |
+            aws ecs create-task-definition \
+              --family my-ecs-task-family \
+              --container-definitions '[{
+                  "name": "paper-management-v.0.1",
+                  "image": "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/ai-venger:latest",
+                  "memory": 512,
+                  "cpu": 256
+              }]'
+
+            aws ecs create-service \
+              --cluster my-ecs-cluster \
+              --service-name my-ecs-service \
+              --task-definition my-ecs-task-family \
+              --desired-count 1
+
 workflows:
   version: 2
   build-workflow:
@@ -73,3 +98,4 @@ workflows:
       - build
       - check-formatting
       - build_and_push_ecr
+      - build_and_push_ecs
