@@ -100,6 +100,8 @@ jobs:
               }]' \
               --region ${AWS_REGION}
 
+            aws ecs create-cluster --cluster-name my-ecs-cluster --region ${AWS_REGION}
+
             aws ecs create-service \
               --cluster my-ecs-cluster \
               --service-name my-ecs-service \
